@@ -2,9 +2,8 @@
 
 h1 {
   font-family: 'gotham-rounded';
+  text-align: center;
   font-weight: bold;
-  width: 241px;
-  height: 83px;
   font-size: 36px;
   line-height: 0.9;
   color: #000000;
@@ -12,9 +11,8 @@ h1 {
 
 h2 {
   font-family: 'gotham-rounded';
+  text-align: center;
   font-weight: bold;
-  width: 241px;
-  height: 83px;
   font-size: 24px;
   line-height: 0.9;
   color: #000000;
@@ -22,9 +20,8 @@ h2 {
 
 h3 {
   font-family: 'lato';
+  text-align: center;
   font-weight: bold;
-  width: 90px;
-  height: 42px;
   font-size: 20px;
   line-height: 2.1;
   letter-spacing: 2.5px;
@@ -34,8 +31,6 @@ h3 {
 p {
   font-family: 'lato';
   text-align: center;
-  width: 221px;
-  height: 60px;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.9px;
