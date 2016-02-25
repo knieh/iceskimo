@@ -13,6 +13,13 @@ h1 {
   color: #000000;
 }
 
+h1 span {
+  color: white;
+  padding: 10px;
+  margin: -2em;
+  z-index: 1;
+}
+
 h2 {
   font-family: 'gotham-rounded';
   text-align: center;
@@ -20,7 +27,11 @@ h2 {
   font-size: 24px;
   line-height: 0.9;
   color: #000000;
+  position: absolute;
+
 }
+
+
 
 h3 {
   font-family: 'lato';
@@ -69,6 +80,18 @@ label {
 
 .special,.special .jumbotron {
   height:100%;
+}
+
+.header-img{
+  position:relative;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .carousel-inner {
@@ -135,4 +158,8 @@ label {
 
 .drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before{
   background-color: #43CDE0;
+
+.description {
+  background: #ffffff;
+  box-shadow: 0 0 2px 0;
 }
