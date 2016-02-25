@@ -9,9 +9,11 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<<<<<<< HEAD
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
     <!-- custom css -->
-    <link rel="stylesheet" href="/assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,37 +22,56 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+  <body class="drawer drawer--left">
+    <header role="banner">
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-brand" href="#">Brand</a></li>
+          <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+          <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+      <!-- Page content -->
+    </main>
+  </body>
 
   <body>
-    <center><h1>Iceskimo</h1></center>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
-      <ol class="carousel-indicators" style="margin-bottom: -3%">
-        <h2> poop </h2>
-      </ol>
+    <!--<center><h1>Iceskimo</h1></center>-->
+    <div class="container special">
+      <div class="jumbotron">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="http://placehold.it/1900x1080&text=Slide One" alt="Chania">
-        </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="http://placehold.it/1900x1080&text=Slide One" alt="Chania">
+            </div>
 
-        <div class="item">
-          <img src="http://placehold.it/1900x1080&text=Slide Two" alt="Chania">
-        </div>
+            <div class="item">
+              <img src="http://placehold.it/1900x1080&text=Slide Two" alt="Chania">
+            </div>
 
-        <div class="item">
-          <img src="http://placehold.it/1900x1080&text=Slide Three" alt="Flower">
-        </div>
+            <div class="item">
+              <img src="http://placehold.it/1900x1080&text=Slide Three" alt="Flower">
+            </div>
 
-        <div class="item">
-          <img src="http://placehold.it/1900x1080&text=Slide Four" alt="Flower">
+            <div class="item">
+              <img src="http://placehold.it/1900x1080&text=Slide Four" alt="Flower">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -82,9 +103,25 @@
           <p>about@iceskimo.com</p>
         <h3>PHONE</h3>
           <p>(858)216-1111</p>
+<center>
+        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+        	<div class="form-group">
+        		<label for="name">Name:</label><br />
+        		<input id="name" class="input form-control" name="name" type="text" value="" size="30" /><br />
+        	</div>
+        	<div class="form-group">
+        		<label for="email">Email address:</label><br />
+        		<input id="email" class="input form-control" name="email" type="text" value="" size="30"/><br />
+        	</div>
+        	<div class="form-group">
+        		<label for="message">Your message:</label><br />
+        		<textarea class="form-control" rows="8"></textarea><br />
+        	</div>
+        	<input id="submit_button" type="submit" value="Send email" />
+        </form>
+</center>
 
     </div>
-    <center><p> oefjwoejfiowej </p></center>
 
       <!-- WHAT IS SHAVED SNOW
       <div id="whatsnow">
@@ -106,10 +143,17 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- iScroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    $('.drawer').drawer();
+    });
+    </script>
 
   </body>
 </html>

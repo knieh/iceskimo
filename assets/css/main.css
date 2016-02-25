@@ -1,5 +1,9 @@
 @import url("fonts.css");
 
+html, body {
+  height: 100%;
+}
+
 h1 {
   font-family: 'gotham-rounded';
   text-align: center;
@@ -47,25 +51,47 @@ hr {
     border-width: 1px;
 }
 
+label {
+  font-family: 'lato';
+  font-weight: normal;
+  line-height: 18px;
+	color: #4a4a4a;
+  font-size: 14px;
+
+}
+
 .carousel,
 .item,
 .active {
     height: 100%;
-    max-height: 600px;
+    width: 100%;
+}
+
+.special,.special .jumbotron {
+  height:100%;
 }
 
 .carousel-inner {
     height: 100%;
-    margin-bottom: 100px;
 }
 
-.carousel img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+  height: 100%;
+  max-width: none;
+  max-height: none;
 }
+
+.container .jumbotron, .container-fluid .jumbotron {
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
+}
+
+.jumbotron {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 
 .carousel-indicators {
   position: absolute;
@@ -81,4 +107,32 @@ hr {
 
 .carousel-indicators li {
   bottom: 20%;
+}
+
+.form-control {
+  width: 75%;
+}
+
+.drawer-hamburger {
+  padding: 20px 1rem 30px;
+  background-color: #ffffff;
+}
+
+.drawer-nav {
+  font-family: 'gotham-rounded';
+  width: 70%;
+  background-color: transparent;
+}
+
+.drawer--left.drawer-open .drawer-hamburger {
+  left: 55%;
+  background: transparent;
+}
+
+.drawer--left .drawer-hamburger, .drawer--left.drawer-open .drawer-nav, .drawer--left.drawer-open .drawer-navbar .drawer-hamburger {
+  background-color: #ffffff;
+}
+
+.drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before{
+  background-color: #43CDE0;
 }
