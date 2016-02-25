@@ -143,12 +143,12 @@ label {
 
 .drawer-nav {
   font-family: 'gotham-rounded';
-  width: 70%;
+  width: 20%;
   background-color: transparent;
 }
 
 .drawer--left.drawer-open .drawer-hamburger {
-  left: 55%;
+  left: 15%;
   background: transparent;
 }
 
@@ -159,7 +159,7 @@ label {
 .drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before{
   background-color: #43CDE0;
 
-.description {
+/*.description {
   background: #ffffff;
   box-shadow: 0 0 2px 0;
-}
+}*/
