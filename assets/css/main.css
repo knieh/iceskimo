@@ -43,6 +43,19 @@ h3 {
   color: #000000;
 }
 
+h4 {
+  font-family: 'lato';
+  font-weight: bold;
+  font-size: 12px;
+  color: #000000;
+}
+
+h5 {
+  font-family: "lato";
+  font-size: 10px;
+  color: #000000;
+}
+
 p {
   font-family: 'lato';
   text-align: center;
@@ -86,12 +99,14 @@ label {
   width:100%;
   min-height: 100vh;
 }
+
 #header-img1 {
-    height: 100%;
-    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.21) 0, #ffffff 100%), url('http://placehold.it/1900x1080&text=Slide Two'); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0.21) 0, #ffffff 100%), url('http://placehold.it/1900x1080&text=Slide Two'); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0.21) 0, #ffffff 100%), url('http://placehold.it/1900x1080&text=Slide Two'); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.21) 0, #ffffff 100%), url('http://placehold.it/1900x1080&text=Slide Two'); /* Standard syntax (must be last) */
+    min-height: 100vh;
+    width: 100%;
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.21) 0, #ffffff 100%), url('images/DSC_1536.JPG'); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0.21) 0, #ffffff 100%), url('images/DSC_1536.JPG'); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0.21) 0, #ffffff 100%), url('images/DSC_1536.JPG'); /* For Firefox 3.6 to 15 */
+    background: url('images/DSC_1536.JPG'), linear-gradient(to bottom, rgba(0, 0, 0, 0.21) 0, #ffffff 100%); /* Standard syntax (must be last) */
 }
 
 .carousel-inner {
@@ -153,13 +168,13 @@ label {
 
 .drawer-nav {
   font-family: 'gotham-rounded';
-  width: 70%;
+  width: 50%;
   background-color: transparent;
 }
 
 .drawer--left.drawer-open .drawer-hamburger {
   position: fixed;
-  left: 55%;
+  left: 50%;
   background: transparent;
 }
 
@@ -169,6 +184,30 @@ label {
 
 .drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before{
   background-color: #43CDE0;
+}
+
+.drawer-menu-item {
+  font-size: 4rem;
+}
+
+footer {
+  background-color: #979797;
+  color: white;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 30%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    max-height:450px !important;
+}
 
 /*.description {
   background: #ffffff;
