@@ -168,13 +168,14 @@ label {
 
 .drawer-nav {
   font-family: 'gotham-rounded';
-  width: 50%;
+  width: 35%;
   background-color: transparent;
+  overflow:hidden;
 }
 
 .drawer--left.drawer-open .drawer-hamburger {
   position: fixed;
-  left: 50%;
+  left: 35%;
   background: transparent;
 }
 
@@ -187,7 +188,13 @@ label {
 }
 
 .drawer-menu-item {
-  font-size: 4rem;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+
+.drawer-brand {
+  margin-top: 0.75em;
+  margin-bottom: 1.5em;
 }
 
 footer {
@@ -197,7 +204,7 @@ footer {
 
 .google-maps {
     position: relative;
-    padding-bottom: 30%; // This is the aspect ratio
+    padding-bottom: 50%; // This is the aspect ratio
     height: 0;
     overflow: hidden;
 }
